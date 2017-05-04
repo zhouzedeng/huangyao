@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>黄姚集市平台</title>
+    <meta name="keyword" content="{$keyword}" />
+    <meta name="description" content="{$description}" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc.css">  
+	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/jquery-1.12.0.min.js"></script>	
+	<style>
+	.content{height:1500px;}
+</style>
+</head>
+<body>
+<div class="head">
+	<div class="head2">
+		<span class="span1">黄姚古镇线上集市平台</span>
+		<span class="span2">让你购物省时省力更省心</span>
+	</div>
+</div>
+
+<div class="content">
+    <div class="notice">
+       <a href="{:U('Index/index')}">
+			<div class="nosub2 nosub">
+				<span>首页</span>
+			</div>
+	    <a>
+	    <a href="{:U('Index/goodslist')}?hot=1">
+			<div class="nosub menu2">
+				<span>热推商品</span>
+			</div>
+	    <a>
+	    <a href="{:U('Index/goodslist')}?hot=0">
+			<div class="nosub nosub2 menu3">
+				<span>大众商品</span>
+			</div>
+		</a>
+		
+		<a href="{:U('Index/text')}">
+			<div class="nosub">
+				<span>平台规则</span>
+			</div>
+		</a>
+		
+		<a href="{:U('Index/notice')}">
+			<div class="nosub nosub2">
+				<span>平台通知</span>
+			</div>
+		</a>
+	</div>
+	
+	<div>
+		<volist name="list" id="vo">
+			<div class="goods">
+				<div class="img">
+					<img src="{$vo.img}">
+				</div>
+				<div class="text">
+					<p class="name">{$vo.good_name}</p>
+					
+					
+					<span >价格: {$vo.price}</span>
+					<br>
+					<span> 卖家: {$vo.username}</span>
+					<br>
+					<span >电话: {$vo.phone}</span>
+					
+					<br>
+					<span>人气 : {$vo.good_click}</span>
+					<br>
+					<br>					
+					<span>{$vo.good_detail}</span>
+				</div>			
+			</div>
+		</volist>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	{$page}
+</div>	
+<script type="text/javascript">
+$(function(){	
+	var menu = {$hot};
+	if(menu == 1){
+		$('.menu2').css('background-color','blue');
+	}
+	else{
+		$('.menu3').css('background-color','blue');
+	}
+	
+ 	
+	
+});
+</script>
+<div class="foot">
+	<span>备案号：粤ICP备17044777号</span>
+</div>
+</body>
+</html>

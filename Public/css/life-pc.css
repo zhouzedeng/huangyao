@@ -1,0 +1,100 @@
+.user{
+	background-color:#7AC5CD;
+	color:#555;
+}
+.write{
+	/* //border:1px solid;	 */
+	width:100%;
+	height:40px;
+	margin-bottom:5px;
+	margin-top:5px;
+	text-align:center;
+	
+}
+.write input{	
+	
+	height:40px;
+	font-size:20px;
+	color:#fff;	
+	border-radius:10px;
+	background-color:#595;
+}
+.content-head
+{
+	width:100%;
+	
+	height:40px;	
+	line-height:40px;
+	text-align:center;	
+	margin-bottom:20px;
+	margin-top:30px;
+}
+.content-head span{
+	color:#595;
+	font-size:20px;
+	border-bottom:2px solid #595;
+}
+.comment{
+	width:50%;
+	border-left:1px dotted #000;
+	border-right:1px dotted #000;
+	border-bottom:1px dotted #000;
+	margin:0 auto;	
+	margin-bottom:30px;
+	background-color:#ddd;
+	
+}
+
+.comment .com-date{
+	width:100%;
+	height:30px;
+	background-color:#595;
+	line-height:30px;
+}
+.comment .com-main{
+	padding:5px;
+}
+
+.comment .com-operate
+{
+	margin-top:10px;
+	margin-bottom:5px;
+	text-align:right;
+}
+.comment .com-operate input{
+	background-color:#87CEEB;
+}
+.myimg{
+	width:300px;
+	height:250px;
+	margin:0 auto;	
+}
+.des{
+	font-size:20px;
+	color:#f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

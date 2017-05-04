@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>黄姚集市平台</title>
+    <meta name="keyword" content="{$keyword}" />
+    <meta name="description" content="{$description}" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc.css">  
+	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/jquery-1.12.0.min.js"></script>	
+</head>
+<body>
+<div class="head">
+	<div class="head2">
+		<span class="span1">黄姚古镇线上集市平台</span>
+		<span class="span2">让你购物省时省力更省心</span>
+	</div>
+</div>
+
+<div class="content">
+    <div class="notice">
+        <a href="{:U('Index/index')}">
+			<div class="nosub2 nosub " style="background:blue;">
+				<span>首页</span>
+			</div>
+	    <a>
+	    <a href="{:U('Index/goodslist')}?hot=1">
+			<div class="nosub ">
+				<span>热推商品</span>
+			</div>
+	    <a>
+	    <a href="{:U('Index/goodslist')}?hot=0">
+			<div class="nosub nosub2">
+				<span>大众商品</span>
+			</div>
+		</a>
+		
+		<a href="{:U('Index/text')}">
+			<div class="nosub">
+				<span>平台规则</span>
+			</div>
+		</a>
+		
+		<a href="{:U('Index/notice')}">
+			<div class="nosub nosub2">
+				<span>平台通知</span>
+			</div>
+		</a>
+	</div>
+	<div class="hot">
+		<a href="{:U('Index/goodslist')}?hot=1" target="_blank"><span>平台推荐 >></span></a>
+	</div>
+	<div>
+		<volist name="hotlist" id="vo">
+			<div class="goods">
+				<div class="img">
+					<img src="{$vo.img}">
+				</div>
+				<div class="text">
+					<p class="name">{$vo.good_name}</p>
+					
+					
+					<span >价格: {$vo.price}</span>
+					<br>
+					<span> 卖家: {$vo.username}</span>
+					<br>
+					<span >电话: {$vo.phone}</span>
+					
+					<br>
+					
+					<br>					
+					<span>{$vo.good_detail}</span>
+				</div>			
+			</div>
+		</volist>
+	</div>
+	
+	<a href="{:U('Index/goodslist')}?hot=0" target="_blank">
+	<div class="hot">
+		<span>本地商品 >> </span>
+	</div>
+	</a>
+	<div>
+		<volist name="list" id="vo">
+			<div class="goods">
+				<div class="img">
+					<img src="{$vo.img}">
+				</div>
+				<div class="text">
+					<p class="name">{$vo.good_name}</p>
+					
+					
+					<span >价格: {$vo.price}</span>
+					<br>
+					<span> 卖家: {$vo.username}</span>
+					<br>
+					<span >电话: {$vo.phone}</span>
+					
+					<br>
+					
+					
+					<br>					
+					<span>{$vo.good_detail}</span>
+					
+				</div>			
+			</div>
+		</volist>
+		
+	</div>
+	
+	
+	<div class="hot">
+		<span>本地服务 </span>
+	</div>
+	<div>
+		<volist name="list2" id="vo">
+			<div class="goods">
+				<div class="img">
+					<img src="{$vo.img}">
+				</div>
+				<div class="text">
+					<p class="name">{$vo.good_name}</p>
+					
+					
+					<span >价格: {$vo.price}</span>
+					<br>
+					<span> 卖家: {$vo.username}</span>
+					<br>
+					<span >电话: {$vo.phone}</span>
+					
+					<br>
+					
+					<br>					
+					<span>{$vo.good_detail}</span>
+					
+				</div>			
+			</div>
+		</volist>
+	</div>
+	
+	
+	
+</div>
+<div class="foot">
+	<span>备案号：粤ICP备17044777号</span>
+</div>
+</body>
+</html>

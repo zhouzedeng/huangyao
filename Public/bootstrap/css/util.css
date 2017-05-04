@@ -1,0 +1,251 @@
+@charset "UTF-8";
+html,body{
+	/*font-family: "微软雅黑",Verdana,Arial,sans-serif;*/
+	font-family: microsoft yahei,"\5b8b\4f53",arial,Verdana;
+	font-size: 14px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+a img {
+	border: none
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.margin10 {margin:10px;}
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mr10{margin-right: 10px;}
+.mr20{margin-right: 20px;}
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 20px;}
+.mb5{margin-bottom: 5px;}
+.mb20{margin-bottom: 20px;}
+.mt5{margin-top: 5px;}
+.mr5{margin-right: 5px;}
+.ml5{margin-left: 5px;}
+.mt0 {margin-top:0px;}
+.mb0 {margin-bottom:0px;}
+.margintop0 {margin-top:0px !important;}
+.marginbottom0 {margin-bottom:0px !important;}
+
+.padding10 {padding:10px;}
+.paddingLeft10 {padding-left:10px;}
+.paddingRight10 {padding-right:10px;}
+.paddingTop5 {padding-top:5px;}
+.paddingTop8 {padding-top:8px;}
+.pt10 {padding-top:10px;}
+.pb10 {padding-bottom:10px;}
+.pl10 {padding-left:10px;}
+.pl20 {padding-left:20px;}
+.pr10 {padding-right:10px;}
+.pr5 {padding-right:5px;}
+.pt5 {padding-top:5px;}
+.pb5 {padding-bottom:5px;}
+.pl5 {padding-left:5px;}
+.pl0{padding-left:0px;}
+.pr0{padding-right:0px;}
+.plr0{padding-left:0px;padding-right:0px;}
+
+.fsize10 {font-size: 10px;}
+.fsize12 {font-size: 12px;}
+.fsize13 {font-size: 13px;}
+.fsize14 {font-size: 14px;}
+.fsize16 {font-size: 16px;}
+.fsize18 {font-size: 18px;}
+.fsize20 {font-size: 20px;}
+.bold{font-weight: bold;}
+
+.black {color:black !important;}
+.yellow {color:yellow !important;}
+.green {color:green !important;}
+.gray{color:graytext !important;}
+.deptyellow {color:#FF6600 !important;}
+.red{color:red !important;}
+.white{color:white !important;}
+.dark {color: #000000}
+.grey {color: #e3e3e3}
+
+.floatleft {float:left;}
+.floatright {float:right;}
+.floatcenter {float:center;}
+.left {float:left;}
+.right {float:right;}
+.clear{clear:both;}
+.clearfix {display: block;}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+.clearnone{clear:none;}
+.hide {display: none;}
+.overflowhidden{overflow:hidden;}
+.text-center {text-align:center;}
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+
+button::-moz-focus-inner {
+	border: 0px
+}
+
+header,section,footer,aside,nav,article,figure {
+	display: block
+}
+
+.navbar-nav a{
+	font-size:18px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+.navbar-right a{
+	font-size:14px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+.current a {
+	color: #32B6BA !important;
+	border-bottom: 3px solid #32B6BA;
+	margin-bottom: -3px;
+}
+.navbar-nav a:hover{
+	color: #32B6BA !important;
+	border-bottom: 3px solid #32B6BA;
+	margin-bottom: -3px;
+}
+.navbar{
+	margin-bottom: 0px !important;
+	border-bottom: 3px solid #DCDCDC;
+}
+.navbar-header {
+    margin-left: 0px !important;
+}
+.nav-home{
+	margin-left: 60px;
+}
+.marginright40{
+	margin-right:40px !important;
+}
+.headtop{
+	margin-top:20px !important;
+}
+.mb-imp30{
+	margin-bottom:30px !important;
+}
+.navbar-default .navbar-nav li a {
+    color: #333;
+}
+.line1 {
+	border-bottom: 1px solid #ccc;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+
+.banquan1 {
+	color: #333333;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 15px;
+	font-family: "微软雅黑";
+}
+
+.wechat1 {
+	cursor: pointer;
+}
+
+.chatcontent{
+  position:absolute;
+  display: none;
+  margin-top: -215px;
+  margin-left: 135px;
+}
+.footer-bg{
+	padding: 0px;
+	height:225px;
+	background-color:#f2f2f2;
+	text-align:left;
+	padding-top:70px;
+	font-family:"微软雅黑";
+	font-size: 18px; 
+	color: #333;
+}
+.footer-bg a{
+	color: #333;
+}
+.footer-bg a:hover{color: #02A9AE ;}
+.footer-bg .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.scroll {
+	width:48px;
+	height:48px;
+	position:fixed;
+	right:60px;
+	bottom:50px;
+	cursor:pointer;
+	z-index: 9999;
+}
+.loadapp {
+	width:48px;
+	height:48px;
+	position:fixed;
+	right:60px;
+	bottom:100px;
+	cursor:pointer;
+	z-index: 9999;
+}
+.appcontent {
+  	display: none;
+	position:fixed;
+	right:30px;
+	bottom:158px;
+	cursor:pointer;
+	z-index: 9999;
+}
+.appcontent p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.navbar-default {
+    background-color: #fff;
+	background-image: linear-gradient(to bottom,#fff 0,#fff 100%);
+}
+
+@media screen and (max-width: 991px) {
+	.container-loadapp{display: none;}
+	.footer-bg {
+	    padding-top: 50px;
+	    font-size: 14px;
+	}
+	.attention{display:block;}
+}
+@media screen and (max-width: 991px) {
+	.chatcontent{
+	  margin-left: 15px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.headtop {
+	    margin-top: 10px !important;
+	}
+	.nav-home {
+	    margin-left: 0px;
+	}
+	
+}

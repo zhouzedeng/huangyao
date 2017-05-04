@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>黄姚古镇</title>
+      <style>
+		.head{
+			
+			width:100%;
+			height:60px;
+			background-color:#9F79EE;
+		}
+		.span1,.span2{
+			line-height:60px;
+		}
+		.span1{
+			font-size:28px;
+			color:#ddd;
+		}
+		.span2{
+			color:#bbb;
+		}
+		
+		.foot{
+			background-color:#000;
+			width:100%;
+			height:30px;
+			color:#aaa;
+			text-align:center;
+			line-height:30px;
+		}
+		
+					body{
+						padding:0;
+						margin:0;
+					}
+					.menu{
+						width:100%;
+						height:40px;
+						
+						line-height:40px;
+						text-align:center;
+						background-color:#ccc;
+					}
+					.menu a button{
+						width:20%;
+						height:30px;
+						color:#fff;
+						font-size:16px;
+						background-color:#9F79EE;
+						border-radius:10px;
+						
+					}
+					.list{
+						width:100%;
+						height:600px;
+						background-color:#ddd;
+					}
+					.list .search
+					{
+						
+						width:100%;
+						height:40px;
+						line-height:40px;
+						text-align:center;
+						background-color:#ccc;
+					}
+					.list .search input{
+						width:60%;
+						height:20px;
+						border-radius:10px;
+					}
+					.list .search button{
+						width:70px;
+						height:25px;
+						margin-left:10px;
+						background-color:#bbb;
+						border-radius:10px;
+					}
+					
+					
+					.list .eight{
+						
+						width:100%;
+						height:560px;	
+						background-color:#fff;
+						padding-top:30px;
+						
+					}
+					.list .eight .block{
+						
+						width:98%;
+						height:450px;
+						margin:0 auto;
+						
+						
+					}
+					.list .eight .block .sub{
+						border:1px solid #666;
+						width:30%;
+						height:130px;
+						float:left;
+						margin-left:2%;
+						margin-top:10px;
+						border-radius:3px;
+						
+					}
+					.list .eight .block .sub .pic{
+						width:100%;
+						height:100px;
+					}
+					.list .eight .block .sub img{
+						width:100%;
+						height:100px;
+					}
+					.list .eight .block .sub .span{
+						background-color:#666;
+						height:30px;
+						line-height:30px;
+						text-align:center;
+						color:#eee;
+					}
+					
+					.list .eight .page{
+						margin-top:10px;
+						
+						width:100%;
+						height:40px;
+						text-align:center;
+						line-height:40px;
+					}
+					
+					.sub a{
+						text-decoration:none;
+					}
+	</style>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+  
+    		
+</head>
+<body>	
+<div class="head">
+	<span class="span1">黄姚古镇集市平台</span>
+	<span class="span2">省时省力更省心</span>
+</div>
+    <div class="menu">
+    	<a href="{:U('Index/index')}"><button>首页</button></a>
+    	<a href="{:U('Index/hot')}"><button style="background-color:blue;">热推</button></a>
+    	<a href="{:U('Index/mgoods')}"><button>商品</button></a>
+    	<a href="{:U('Index/mservice')}"><button>服务</button></a>
+	</div>
+	<div class="list">	
+	    <div class="search">
+	    	<input type="text"  id="con" value="{$con}"><button onclick="javascript:search()" id="s-btn">搜索</button>
+	    </div>
+	    <div class="eight">
+	    
+			<div class="block">							
+    		 <volist name="list" id="vo">
+			   <div class="sub">
+			   <a href="{:U('Index/mdetail')}?id={$vo.id}">
+					<div class="pic">
+						<img src="{$vo.img}">
+					</div>
+					<div class="span">{$vo.good_name}</div>
+				</a>
+				</div>	
+			</volist> 
+												
+			</div>
+			<div class="page">
+	    	 {$page}
+			</div>
+		</div>
+		
+	</div>
+	
+
+<div class="foot">
+	<span>备案号：粤ICP备17044777号</span>
+</div>
+
+<script type="text/javascript">
+	
+ function search()
+ {
+	 var condition = document.getElementById("con").value;
+		
+	window.location.href="{:U('Index/hot')}?con="+condition; 
+	 
+ }	
+	
+
+</script>
+
+</body>
+</html>

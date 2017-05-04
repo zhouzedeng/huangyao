@@ -1,0 +1,58 @@
+.inter{
+	
+	width:100%;
+	height:520px;
+	background-color:#ddd;
+	padding-top:20px;
+	
+}
+.radius{
+	
+	border-radius:40px;
+	width:200px;
+	height:150px;
+	margin:0 auto;	
+	text-align:center;
+	margin-top:20px;
+	
+	
+}
+
+.inter .r1{
+	background-color:#CD6090;
+	
+}
+.inter .r2{
+	background-color:#EE9A00;
+}
+.inter .r3{
+	background-color:#9F79EE;
+}
+.inter .radius .rspan
+{
+	color:#fff;
+	font-size:30px;
+	margin-top:20px;
+}
+.inter .radius .sub
+{
+	color:#555;
+	
+}
+.inter .radius 	
+{
+	text-decoration:none;
+}
+
+.mr{
+	
+	text-align:right;
+	color:blue;
+}
+
+
+
+		
+		
+    
+    
